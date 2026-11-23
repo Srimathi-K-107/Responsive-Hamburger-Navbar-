@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger Navbar</title>
+    <link rel="stylesheet" href="style.css">
+        <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+</head>
+<body>
+    <nav>
+        <h1>Logo</h1>
+        <ul id="listitem">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+            <i class="ri-menu-line" id="menu"></i>
+    </nav>
+    <section class="hero">
+    
+        <span class="hero-tag">
+          ✦ WELCOME TO OUR WORLD
+        </span>
+  <h1>Discover Something <span>Amazing.</span></h1>
+  <p>Explore new ideas, find inspiration, and make every moment special.</p>
+</section>
+
+    <div id="sidebar">
+        <div id="close">
+            <i class="ri-close-large-line"></i>
+        </div>
+        <div class="ullist">
+            <ul>
+               <li><a href="">Home</a></li>
+               <li><a href="">About</a></li>
+               <li><a href="">Services</a></li>
+               <li><a href="">Contact</a></li>
+           </ul>
+        </div>
+    </div>
+    <script>
+        let sidebar=document.getElementById("sidebar")
+        let close=document.getElementById("close")
+        let menu=document.getElementById("menu")
+        menu.addEventListener("click",()=>{
+            sidebar.classList.toggle("showmenubar")
+        })
+        close.addEventListener("click",()=>{
+            sidebar.classList.remove("showmenubar")
+        })
+
+    </script>
+</body>
+</html>
